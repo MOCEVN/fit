@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+// use App\Mail\ContactEmail;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -10,4 +11,13 @@ class ContactController extends Controller
 	public function showForm() {
 		return view('contact.form');
 	}
+
+	public function create()
+    {
+
+    }
+
+
 }
+
+
