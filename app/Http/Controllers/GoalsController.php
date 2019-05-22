@@ -2,19 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Company;
 use App\Goal;
+
 use Illuminate\Http\Request;
 
 class GoalsController extends Controller
 {
-    public function list() {
+    public function index() {
 
-      $activeGoals = Goal::active()->get();
-      $inactiveGoals = Goal::inactive()->get();
-      $companies = Company::all();
+      $goals = Goal::all();
 
 
-    return view('internals.goals', compact('activeGoals', 'inactiveGoals', 'companies'));
+    return view('goals.index', compact('goals'));
+
+  }
+
+  public function create()
+  {
+
+    $companies = Company::all();
+    return view('goals.create', compact('companies'));
 
   }
 
@@ -30,7 +38,7 @@ class GoalsController extends Controller
 
       Goal::create($data);
 
-  		return back();
+  		return redirect('goals');
   }
 
 }

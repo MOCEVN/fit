@@ -22,9 +22,11 @@ Route::get('/', function () {
 
 Route::view('contact', 'contact');
 Route::view('about', 'about');
+Route::view('profile', 'profile');
 
 Route::view('text', 'text');
 
 
-Route::get('goals', 'GoalsController@list');
+Route::get('goals', 'GoalsController@index');
+Route::get('goals/create', 'GoalsController@create');
 Route::post('goals', 'GoalsController@store');

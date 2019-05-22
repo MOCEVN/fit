@@ -9,7 +9,7 @@ class Company extends Model
 {
     protected $guarded = [];
 
-    public funtion goals()
+    public function goals()
     {
     	return $this->hasMany(Goal::class);
     }

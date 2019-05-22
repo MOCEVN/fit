@@ -12,7 +12,11 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="goals">Goals</a>
+        <a class="nav-link" href="goals">Goals</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="profile">Profile</a>
       </li>
 
 
