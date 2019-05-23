@@ -4,7 +4,7 @@
 
 @section('content')
 
-		<h1>Welcome to you profile</h1>
+		<h1>Welcome to your profile</h1>
 
 
 

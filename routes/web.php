@@ -20,13 +20,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('contact', 'contact');
+
 Route::view('about', 'about');
+Route::view('contact', 'contact');
+Route::view('goals', 'goals');
 Route::view('profile', 'profile');
 
-Route::view('text', 'text');
+Route::view('form', 'FormController@index');
+Route::view('form/create', 'FormController@create');
+Route::post('form', 'FormController@store');
 
-
-Route::get('goals', 'GoalsController@index');
-Route::get('goals/create', 'GoalsController@create');
-Route::post('goals', 'GoalsController@store');

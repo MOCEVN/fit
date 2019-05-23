@@ -2,16 +2,14 @@
 
 namespace App;
 
-
 use Illuminate\Database\Eloquent\Model;
 
-class Company extends Model
+class Training extends Model
 {
     protected $guarded = [];
 
-    public function goals()
+    public function form()
     {
-    	return $this->hasMany(Goal::class);
+    	return $this->hasMany(Form::class);
     }
 }
-
