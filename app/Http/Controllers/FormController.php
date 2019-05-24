@@ -2,23 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use App\Form
+use App\Training;
+use App\Form;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
+
+
    public function index()
    {
+   		$forms = Form::get();
 
-   		$forms = Form::all();
-
-   		return view('forms.index', compact('Forms');
+   		return view('forms.index')
+   			->with('forms', $forms);
    }
+
+
 
    public function create()
    {
 
-   		$trainings = Training::all();
+   		$trainings = Training::get();
 
    		return view('forms.create', compact('trainings'));
    }
@@ -37,5 +42,11 @@ class FormController extends Controller
    		Form::create($data);
 
    		return redirect('form');
+   }
+
+   public function show(Form $form)
+   {
+
+   		return view ('form.show', compact('form'));
    }
 }
