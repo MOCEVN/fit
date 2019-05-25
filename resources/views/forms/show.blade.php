@@ -7,6 +7,7 @@
 	<div class="row">
 		<div class="col-12">
 			<h1>Details for {{ $form->name }}</h1>
+			<p><a href="/forms/{{ $form->id }}/edit">Edit</a></p>
 		</div>
 	</div>
 

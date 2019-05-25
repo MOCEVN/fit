@@ -21,13 +21,17 @@ Route::get('/', function () {
 });
 
 
-// Route::get('about', 'about');
-// Route::get('contact', 'contact');
-// Route::get('goals', 'goals');
-// Route::get('profile', 'profile');
+Route::view('about', 'about');
+Route::view('contact', 'contact');
+Route::view('goals', 'goals');
+Route::view('profile', 'profile');
 
 Route::get('form', 'FormController@index');
 Route::get('form/create', 'FormController@create');
 Route::post('form', 'FormController@store');
 Route::get('form/{form}', 'FormController@show');
+Route::get('form/{form}/edit', 'FormController@edit');
+Route::patch('form/{form}', 'FormController@update');
 
+
+// Route::resource('form', 'FormController');

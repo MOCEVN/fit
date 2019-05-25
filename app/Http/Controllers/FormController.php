@@ -36,7 +36,6 @@ class FormController extends Controller
    			'email' => 'required|email',
    			'active' => 'required',
    			'training_id' => 'required',
-
    		]);
 
    		Form::create($data);
@@ -48,5 +47,23 @@ class FormController extends Controller
    {
 
    		return view ('form.show', compact('form'));
+   }
+
+   public function edit(Form $form)
+   {
+   		$forms = Form::get();
+   		return view('forms.edit', compact('form', 'forms'));
+   }
+
+   public function update(Form $form)
+   {
+   		$data = request()->validate([
+   			'name' => 'required|min:3',
+   			'email' => 'required|email',
+   		]);
+
+   		$form->update($data);
+
+   		return redirect('forms/' . $form->id);
    }
 }
