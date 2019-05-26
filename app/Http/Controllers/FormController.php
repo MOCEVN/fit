@@ -24,21 +24,15 @@ class FormController extends Controller
    {
 
    		$trainings = Training::get();
+         $form = new Form();
 
-   		return view('forms.create', compact('trainings'));
+   		return view('forms.create', compact('trainings', 'form'));
    }
 
    public function store()
    {
 
-   		$data = request()->validate([
-   			'name' => 'required|min:3',
-   			'email' => 'required|email',
-   			'active' => 'required',
-   			'training_id' => 'required',
-   		]);
-
-   		Form::create($data);
+   		Form::create($this->validateRequest());
 
    		return redirect('form');
    }
@@ -57,13 +51,19 @@ class FormController extends Controller
 
    public function update(Form $form)
    {
-   		$data = request()->validate([
-   			'name' => 'required|min:3',
-   			'email' => 'required|email',
-   		]);
 
-   		$form->update($data);
+   		$form->update($this->validateRequest());
 
    		return redirect('forms/' . $form->id);
+   }
+
+   private function validateRequest()
+   {
+      $data = request()->validate([
+            'name' => 'required|min:3',
+            'email' => 'required|email',
+            'active' => 'required',
+            'training_id' => 'required',
+         ]);
    }
 }

@@ -18,6 +18,12 @@
 
     @include('nav')
 
+    @if(session()->had('message'))
+	    <div class="aler alert-success" role="alert">
+	    	<strong>Success</strong> {{ session()->get('message') }}
+	    </div>
+	 @endif
+
     @yield('content')
 
 	</div>

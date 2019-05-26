@@ -14,13 +14,15 @@
 			<div class="form-group">
 				<label class="active">Choose your Goal</label>
 				<select name="active" id="active" class="form-control">
-					<option class="1">Active</option>
-					<option class="0">Inactive</option>
-					<option value="0">Lose weight</option>
-					<option value="1">Beginner Female/Male</option>
-					<option value="2">Weight Training Female/Male</option>
-					<option value="3">Condition</option>
-					<option value="4">BBB</option>
+
+
+					{{-- <option value="1" {{ $form->active == 'Active' ? 'selected' : ''}}>Active</option>
+					<option value="0" {{ $form->inactive == 'Inactive' ? 'selected' : ''}}>Inactive</option> --}}
+					<option value="0"{{ $form->loseweight == 'Lose weight' ? 'selected' : ''}}>Lose weight</option>
+					<option value="1"{{ $form->beginner == 'Beginner' ? 'selected' : ''}}>Beginner Female/Male</option>
+					<option value="2"{{ $form->weight == 'Weight' ? 'selected' : ''}}>Weight Training Female/Male</option>
+					<option value="3"{{ $form->condition == 'Condition' ? 'selected' : ''}}>Condition</option>
+					<option value="4"{{ $form->bbb == 'BBB' ? 'selected' : ''}}>BBB</option>
 				</select>
 			</div>
 
@@ -37,7 +39,7 @@
 				<label class="training_id">Trainings</label>
 				<select name="training_id" id="training_id" class="form-control">
 					@foreach ($trainings as $training)
-						<option value="{{ $training->id }}">{{ $training->name }}</option>
+						<option value="{{ $training->id }}">{{ $training->id == $form->training_id ? 'selected' : '' }}</option>
 					@endforeach
 				</select>
 			</div> --}}

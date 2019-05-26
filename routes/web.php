@@ -13,25 +13,22 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::view('/', 'home');
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('contact', 'ContactController@create');
+Route::post('contact', 'ContactController@store');
 
 
 Route::view('about', 'about');
-Route::view('contact', 'contact');
 Route::view('goals', 'goals');
 Route::view('profile', 'profile');
 
-Route::get('form', 'FormController@index');
-Route::get('form/create', 'FormController@create');
-Route::post('form', 'FormController@store');
-Route::get('form/{form}', 'FormController@show');
-Route::get('form/{form}/edit', 'FormController@edit');
-Route::patch('form/{form}', 'FormController@update');
+// Route::get('form', 'FormController@index');
+// Route::get('form/create', 'FormController@create');
+// Route::post('form', 'FormController@store');
+// Route::get('form/{form}', 'FormController@show');
+// Route::get('form/{form}/edit', 'FormController@edit');
+// Route::patch('form/{form}', 'FormController@update');
 
 
-// Route::resource('form', 'FormController');
+Route::resource('form', 'FormController');
