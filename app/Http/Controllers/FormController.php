@@ -39,6 +39,8 @@ class FormController extends Controller
 
    		Form::create($this->validateRequest());
 
+
+
    		return redirect('form');
    }
 

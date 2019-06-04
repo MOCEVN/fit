@@ -24,6 +24,6 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "startbootstrap-creative": "^5.1.4"
+        "startbootstrap-creative": "^5.1.5"
     }
 }

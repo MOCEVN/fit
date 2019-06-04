@@ -12,7 +12,7 @@
 
 	<div class="row">
 		<div class="col-12">
-			<form action="/forms/{{ $form->id }}" method="POST">
+			<form action="{{ route('forms.update', ['form' => $form]) }}" method="POST">
 				@method('PATCH')
 				@include('forms.form')
 

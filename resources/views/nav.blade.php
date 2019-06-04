@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -11,7 +11,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="home">Home</a>
                       </li>
 
                       <li class="nav-item">
@@ -19,11 +19,11 @@
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="about">About us</a>
+                        <a class="nav-link" href="about">About FIT</a>
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact</a>
+                        <a class="nav-link" href="../contact">Contact</a>
                       </li>
 
                       <li class="nav-item">
@@ -31,8 +31,9 @@
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="profile">Profile</a>
+                        <a class="nav-link" href="{{ action('HomeController@index') }}">Profile</a>
                       </li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->

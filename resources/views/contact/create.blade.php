@@ -8,7 +8,7 @@
 
 
 	@if( ! session()->has('message'))
-		<form action="/contact" method="POST">
+		<form action="{{ route('contact.store') }} "method="POST">
 			<div class="form-group pb-2">
 					<label for="name">Full name</label>
 					<input type="text"  name="name" value="{{ old('name') }}" class="form-control">

@@ -13,14 +13,14 @@
 
 Auth::routes();
 
-Route::view('/', 'home');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::view('/', 'home')->name('index');
+Route::get('home', 'HomeController@index');
 
 Route::get('contact', 'ContactController@create');
 Route::post('contact', 'ContactController@store');
 
 
-Route::view('about', 'about')->middleware('test');
+Route::view('about', 'about');
 Route::view('goals', 'goals');
 Route::view('profile', 'profile');
 
@@ -32,5 +32,6 @@ Route::view('profile', 'profile');
 // Route::patch('form/{form}', 'FormController@update');
 
 Route::resource('form', 'FormController');
+
 
 
