@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+      <img src="{{ asset('img/fit-logo2.png') }}" height="40">
+    </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -10,20 +10,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                      <li class="nav-item">
+                      {{-- <li class="nav-item">
                         <a class="nav-link" href="home">Home</a>
-                      </li>
+                      </li> --}}
 
                       <li class="nav-item">
                         <a class="nav-link" href="form">Form</a>
-                      </li>
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="about">About FIT</a>
-                      </li>
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="../contact">Contact</a>
                       </li>
 
                       <li class="nav-item">
@@ -31,7 +23,19 @@
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="{{ action('HomeController@index') }}">Profile</a>
+                        <a class="nav-link" href="about">About FIT</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="profile">Profile</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="posts">Posts</a>
                       </li>
 
                     </ul>

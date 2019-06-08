@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Training;
 use App\Form;
+use App\Events\NewFormIsRegisteredEvent;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FormController extends Controller
 {
@@ -24,25 +26,33 @@ class FormController extends Controller
    }
 
 
-
    public function create()
    {
 
-   		$trainings = Training::get();
+   		// $trainings = Training::get();
          $form = new Form();
 
-   		return view('forms.create', compact('trainings', 'form'));
+   		return view('forms.create', compact('form'));
+
+         $form->save();
+
    }
 
-   public function store()
-   {
+    public function store(Request $request)
+    {
+   		$form = Form::create($request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required|min:3',
+            'email' => 'required|email',
+            'active' => 'required',
+        ]));
 
-   		Form::create($this->validateRequest());
-
-
+        event(new NewFormIsRegisteredEvent($form));
 
    		return redirect('form');
-   }
+
+
+    }
 
    public function show(Form $form)
    {
@@ -67,10 +77,11 @@ class FormController extends Controller
    private function validateRequest()
    {
       $data = request()->validate([
-            'name' => 'required|min:3',
+            'first_name' => 'required|min:3',
+            'last_name' => 'required|min:3',
             'email' => 'required|email',
             'active' => 'required',
-            'training_id' => 'required',
+            // 'training' => 'required',
          ]);
    }
 }

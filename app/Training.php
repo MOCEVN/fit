@@ -8,8 +8,10 @@ class Training extends Model
 {
     protected $guarded = [];
 
-    public function form()
-    {
-    	return $this->hasMany(Form::class);
-    }
+    // public function form()
+    // {
+    // 	return $this->hasMany(Form::class);
+    // }
+
+
 }

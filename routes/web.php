@@ -19,10 +19,12 @@ Route::get('home', 'HomeController@index');
 Route::get('contact', 'ContactController@create');
 Route::post('contact', 'ContactController@store');
 
+Route::get('goals', 'GoalController@index');
 
 Route::view('about', 'about');
-Route::view('goals', 'goals');
 Route::view('profile', 'profile');
+
+Route::resource('posts', 'PostController');
 
 // Route::get('form', 'FormController@index');
 // Route::get('form/create', 'FormController@create');

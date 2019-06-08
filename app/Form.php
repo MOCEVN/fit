@@ -31,10 +31,10 @@ class Form extends Model
 		return $query->where('active', 0);
 	}
 
-	public function training()
-	{
-		return $this->belongsTo(Form::class);
-	}
+	// public function training()
+	// {
+	// 	return $this->belongsTo(Form::class);
+	// }
 
 	public function goalsOptions()
 	{
