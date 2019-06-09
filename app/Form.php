@@ -16,20 +16,21 @@ class Form extends Model
 		'active' => 1
 	];
 
-	public function getActiveAttribute($attribute)
+	public function getGoalsAttribute($attribute)
 	{
-		return $this->activeOptions()[$attribute];
+		return $this->goalsOptions()[$attribute];
+
 	}
 
-	public function scopeActive($query)
-	{
-		return $query->where('active', 1);
-	}
+	// public function scopeActive($query)
+	// {
+	// 	return $query->where('active', 1);
+	// }
 
-	public function scopeInactive($query)
-	{
-		return $query->where('active', 0);
-	}
+	// public function scopeInactive($query)
+	// {
+	// 	return $query->where('active', 0);
+	// }
 
 	// public function training()
 	// {

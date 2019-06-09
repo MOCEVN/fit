@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Training;
+// use App\Training;
 use App\Form;
 use App\Events\NewFormIsRegisteredEvent;
 use Illuminate\Http\Request;
@@ -57,7 +57,7 @@ class FormController extends Controller
    public function show(Form $form)
    {
 
-   		return view ('form.show', compact('form'));
+   		return view ('forms.show', compact('form'));
    }
 
    public function edit(Form $form)

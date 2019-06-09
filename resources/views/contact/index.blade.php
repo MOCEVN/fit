@@ -11,14 +11,14 @@
 		<form action="{{ route('contact.store') }} "method="POST">
 			<div class="form-group pb-2">
 					<label for="name">Full name</label>
-					<input type="text"  name="name" value="{{ old('name') }}" class="form-control">
+					<input type="text"  name="name"class="form-control">
 				</div>
-				<div>{{ $errors->first('name') }}</div>
+				<div>{{ $errors->first('first_name') }}</div>
 
 
 				<div class="form-group pb-2">
 					<label for="email">Email</label>
-					<input type="text"  name="email" value="{{ old('email') }}" class="form-control">
+					<input type="text"  name="email" value="" class="form-control">
 				</div>
 				<div>{{ $errors->first('email') }}</div>
 

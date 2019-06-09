@@ -16,10 +16,11 @@ Auth::routes();
 Route::view('/', 'home')->name('index');
 Route::get('home', 'HomeController@index');
 
-Route::get('contact', 'ContactController@create');
-Route::post('contact', 'ContactController@store');
+// Route::post('contact', 'ContactController@create');
+// Route::get('contact', 'ContactController@store');
+Route::resource('contact', 'ContactController');
 
-Route::get('goals', 'GoalController@index');
+Route::get('workout', 'WorkoutController@index');
 
 Route::view('about', 'about');
 Route::view('profile', 'profile');

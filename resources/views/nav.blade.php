@@ -19,7 +19,7 @@
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="goals">Goals</a>
+                        <a class="nav-link" href="workout">Workouts</a>
                       </li>
 
                       <li class="nav-item">
@@ -32,10 +32,6 @@
 
                       <li class="nav-item">
                         <a class="nav-link" href="profile">Profile</a>
-                      </li>
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="posts">Posts</a>
                       </li>
 
                     </ul>

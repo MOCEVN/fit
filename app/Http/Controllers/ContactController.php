@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function create()
+    public function index()
     {
-    	return view('/contact.create');
+    	return view('contact.index');
     }
 
     public function store()
@@ -22,7 +22,7 @@ class ContactController extends Controller
     	]);
 
 
-    	Mail::to('test@test.com')->send(new ContactMail());
+    	Mail::to('test@test.com')->send(new ContactController($data));
 
     	return redirect('contact')->with('message', 'Thanks for your message. We\'ll be in touch.');
     }

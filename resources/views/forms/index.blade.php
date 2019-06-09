@@ -18,11 +18,12 @@
 			{{ $form->id }}
 		</div>
 			<div class="col-4">
-				<a href="/forms/{{ $form->id }}">{{ $form->first_name }} {{ $form->last_name }}
-					{{ $form->email }} {{ $form->active }}</a>
+				<a href="profile/">{{ $form->first_name }}</a>
 			</div>
-	</div>
-	@endforeach
 
+					<div class="col-4">{{ $form->last_name }}</div>
+					<div class="col-2">{{ $form->email }}</div>
+
+	@endforeach
 
 @endsection
