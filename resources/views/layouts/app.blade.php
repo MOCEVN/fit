@@ -21,7 +21,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
 <body class="@yield('class')">
+
     <div id="app">
         @include('nav')
 
@@ -30,6 +32,7 @@
                     @yield('content')
             </div>
         </main>
+        @include('partials.footer')
     </div>
 
     <script src="{{ asset('js/app.js') }}"></script>

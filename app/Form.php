@@ -13,12 +13,12 @@ class Form extends Model
 	protected $guarded = [];
 
 	protected $attributes = [
-		'active' => 1
+		'workouts' => 1
 	];
 
-	public function getGoalsAttribute($attribute)
+	public function getWorkoutsAttribute($attribute)
 	{
-		return $this->goalsOptions()[$attribute];
+		return $this->WorkoutsOptions()[$attribute];
 
 	}
 
@@ -37,14 +37,16 @@ class Form extends Model
 	// 	return $this->belongsTo(Form::class);
 	// }
 
-	public function goalsOptions()
+	public function WorkoutsOptions()
 	{
 		return [
 			0 => 'Lose weight',
-			1 => 'Beginner',
-			2 => 'Weight',
-			3 => 'Condition',
-			4 => 'BBB',
+			1 => 'Beginner Female',
+			2 => 'Beginner Male',
+			3 => 'Weight Female',
+			4 => 'Weight Male',
+			5 => 'Condition',
+			6 => 'BBB',
 
 
 		];

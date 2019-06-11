@@ -1,14 +1,8 @@
 <div class="form-group pb-2">
-	<label for="name">First name</label>
-		<input type="text"  name="first_name" value="{{ old('first_name')  }}" class="form-control">
+	<label for="name">Full name</label>
+		<input type="text"  name="full_name" value="{{ old('full_name')  }}" class="form-control">
 </div>
-	<div>{{ $errors->first('first_name') }}</div>
-
-<div class="form-group pb-2">
-	<label for="name">Lastname</label>
-		<input type="text"  name="last_name" value="{{ old('last_name')  }}" class="form-control">
-</div>
-	<div>{{ $errors->first('last_name') }}</div>
+	<div>{{ $errors->first('full_name') }}</div>
 
 
 <div class="form-group pb-2">
@@ -18,18 +12,32 @@
 	<div>{{ $errors->first('email') }}</div>
 
 <div class="form-group">
-	<label class="active">What is your Goal?</label>
-		<select name="active" id="active" class="form-control">
+	<label class="workouts">Choose your workout</label>
+		<select name="workouts" id="workouts" class="form-control">
 
 	{{-- <option value="1" {{ $form->active == 'Active' ? 'selected' : ''}}>Active</option>
 	<option value="0" {{ $form->inactive == 'Inactive' ? 'selected' : ''}}>Inactive</option> --}}
-		<option>Choose your Goal</option>
-			<option value="0"{{ $form->loseweight == 'Lose weight' ? 'selected' : ''}}>Lose weight</option>
-			<option value="1"{{ $form->beginner == 'Beginner' ? 'selected' : ''}}>Beginner Female/Male</option>
-			<option value="2"{{ $form->weight == 'Weight' ? 'selected' : ''}}>Weight Training Female/Male</option>
-			<option value="3"{{ $form->condition == 'Condition' ? 'selected' : ''}}>Condition</option>
-			<option value="4"{{ $form->bbb == 'BBB' ? 'selected' : ''}}>BBB</option>
+		<option>...</option>
+			<option value="0"{{ $form->loseWeight == 'Lose weight' ? 'selected' : ''}}>Lose weight</option>
+
+			<option value="1"{{ $form->beginnerFemale == 'Beginner Female' ? 'selected' : ''}}>Beginner Female</option>
+
+			<option value="2"{{ $form->beginnerMale == 'Beginner Male' ? 'selected' : ''}}>Beginner Male</option>
+
+			<option value="3"{{ $form->weightFemale == 'Weight Female' ? 'selected' : ''}}>Weight Training Female</option>
+
+			<option value="4"{{ $form->weightMale == 'Weight Male' ? 'selected' : ''}}>Weight Training Male</option>
+
+			<option value="5"{{ $form->condition == 'Condition' ? 'selected' : ''}}>Condition</option>
+
+			<option value="6"{{ $form->bbb == 'BBB' ? 'selected' : ''}}>BBB</option>
 		</select>
+	</div>
+
+	<div class="form-group d-flex flex-column">
+		<label for="image">Profile Image</label>
+		<input type="file" name="image" class="py-2">
+		<div>{{ $errors->first('image') }}</div>
 	</div>
 
 	{{-- <div class="form-group">

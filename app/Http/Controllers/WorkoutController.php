@@ -16,7 +16,7 @@ class WorkoutController extends Controller
 
    			$workouts = collection([
 
-		// All the Goals
+		// All the Workouts
 		['name' => 'Lose weight', 'Beginner Female/Male', 'Weight Female/Male', 'Condition', 'BBB'],
 
 		// Lose weight

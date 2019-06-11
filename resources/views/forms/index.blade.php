@@ -18,11 +18,10 @@
 			{{ $form->id }}
 		</div>
 			<div class="col-4">
-				<a href="profile/">{{ $form->first_name }}</a>
+				<a href="forms/show">{{ $form->full_name }}</a>
 			</div>
-
-					<div class="col-4">{{ $form->last_name }}</div>
 					<div class="col-2">{{ $form->email }}</div>
+					<div class="col-2">{{ $form->workouts }}</div>
 
 	@endforeach
 

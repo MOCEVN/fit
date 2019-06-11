@@ -1,18 +1,18 @@
  @extends('layouts.app')
 
-@section('title', 'Edit details for ' . $form->name)
+@section('title', 'Edit details for ' . $form->full_name)
 
 @section('content')
 
 	<div class="row">
 		<div class="col-12">
-			<h1>Edit details for {{ $form->name }}</h1>
+			<h1>Edit details for {{ $form->full_name }}</h1>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-12">
-			<form action="{{ route('forms.update', ['form' => $form]) }}" method="POST">
+			<form action="{{ route('forms.update', ['form' => $form]) }}" method="POST" enctype="multipart/form-data">
 				@method('PATCH')
 				@include('forms.form')
 

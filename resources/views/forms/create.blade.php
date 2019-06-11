@@ -22,7 +22,7 @@
 
 	<div class="row">
 		<div class="col-12">
-			<form action="{{ route('form.store') }}" method="POST">
+			<form action="{{ route('form.store') }}" method="POST" enctype="multipart/form-data">
 				@include('forms.form')
 
 			<button type="submit" class="btn btn-primary" >Save Form</button>

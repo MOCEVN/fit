@@ -25,14 +25,6 @@
           <hr>
           <p>wsup<p>
         </div>
-        <div class="col-md-4 mb-5">
-          <h2>Contact</h2>
-          <hr>
-          <address>
-            <strong>Mail us for more information:</strong>
-            <strong><a href="mailto:info@fit.nl">info@fit.nl</a></strong>
-        </div>
-      </div>
 
   </section>
 

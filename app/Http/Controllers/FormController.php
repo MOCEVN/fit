@@ -41,11 +41,12 @@ class FormController extends Controller
     public function store(Request $request)
     {
    		$form = Form::create($request->validate([
-            'first_name' => 'required',
-            'last_name' => 'required|min:3',
+            'full_name' => 'required',
             'email' => 'required|email',
-            'active' => 'required',
+            'workouts' => 'required',
         ]));
+
+        $this->storeImage($form);
 
         event(new NewFormIsRegisteredEvent($form));
 
@@ -72,16 +73,44 @@ class FormController extends Controller
    		$form->update($this->validateRequest());
 
    		return redirect('forms/' . $form->id);
+
+      $this->storeImage($form);
    }
 
    private function validateRequest()
    {
-      $data = request()->validate([
-            'first_name' => 'required|min:3',
-            'last_name' => 'required|min:3',
+
+      return tap(request()->validate([
+            'full_name' => 'required|min:3',
             'email' => 'required|email',
-            'active' => 'required',
-            // 'training' => 'required',
-         ]);
-   }
+            'workouts' => 'required',
+
+         ]), function () {
+              if (request()->hasFile('image')) {
+                  request()->validate([
+                  'image' => 'file|image|max:5000'
+              ]);
+          }
+
+      });
+
+    }
+
+    private function storeImage($form)
+    {
+      if (request()->has('image')) {
+          $form->update([
+              'image' => request()->image->store('uploads', 'public'),
+          ]);
+      }
+    }
+
+   public function destroy(Form $Form)
+    {
+        $this->authorize('delete', $form);
+        $form->delete();
+        return redirect('form');
+    }
+
+
 }
