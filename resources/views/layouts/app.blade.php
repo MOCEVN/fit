@@ -32,7 +32,6 @@
                     @yield('content')
             </div>
         </main>
-        @include('partials.footer')
     </div>
 
     <script src="{{ asset('js/app.js') }}"></script>

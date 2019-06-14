@@ -59,6 +59,8 @@ class FormController extends Controller
    {
 
       return view ('forms.show', compact('form'));
+
+      $form->save();
    }
 
    public function edit(Form $form)
