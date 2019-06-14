@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-// use App\Training;
+// use App\Workout;
 use App\Form;
 use App\Events\NewFormIsRegisteredEvent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+
 
 class FormController extends Controller
 {
@@ -29,7 +30,6 @@ class FormController extends Controller
    public function create()
    {
 
-   		// $trainings = Training::get();
          $form = new Form();
 
    		return view('forms.create', compact('form'));
@@ -58,7 +58,7 @@ class FormController extends Controller
    public function show(Form $form)
    {
 
-   		return view ('forms.show', compact('form'));
+      return view ('forms.show', compact('form'));
    }
 
    public function edit(Form $form)
@@ -72,7 +72,7 @@ class FormController extends Controller
 
    		$form->update($this->validateRequest());
 
-   		return redirect('forms/' . $form->id);
+   		return redirect('form/' . $form->id);
 
       $this->storeImage($form);
    }
@@ -105,9 +105,9 @@ class FormController extends Controller
       }
     }
 
-   public function destroy(Form $Form)
+   public function destroy($id)
     {
-        $this->authorize('delete', $form);
+       $form = Form::find($id);
         $form->delete();
         return redirect('form');
     }

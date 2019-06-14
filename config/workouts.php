@@ -1,23 +1,7 @@
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Workout;
-use Illuminate\Http\Request;
-
-class WorkoutController extends Controller
-{
-    public function index()
-	{
-		$workouts = Workout::get();
-
-   		return view('workouts.index')
-   			->with('workouts', $workouts->all());
-
-   			$workouts = collection([
+<!-- $workouts = collection([
 
 		// All the Workouts
-		['name' => 'Lose weight', 'Beginner Female/Male', 'Weight Female/Male', 'Condition', 'BBB'],
+		1 => ['name' => 'Lose weight', 'Beginner Female/Male', 'Weight Female/Male', 'Condition', 'BBB'],
 
 		// Lose weight
 		['name' => 'Lose weight',
@@ -40,9 +24,6 @@ class WorkoutController extends Controller
 			'exercises' => 'Warming up', 'Squat', 'Leg extension', 'Bench press', 'Pectoral', 'Pulldown', 'Low row', 'Shoulder press', 'Arm curl', 'Rotary torso', 'Total abdominal', 'Cooling down'],
 
 		// Condition
-		['name' => 'Condition',
+		['name' => 'Lose weight',
 			'exercises' => 'Warming up', 'Burpees', 'Jump rope', 'Step ups', 'High Intensity Interval Training', 'Cooling down'],
-	]);
-
-	}
-}
+	]); -->

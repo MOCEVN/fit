@@ -40,6 +40,8 @@
 		<div>{{ $errors->first('image') }}</div>
 	</div>
 
+	@csrf
+
 	{{-- <div class="form-group">
 	<label class="training">How many times a week do you train?</label>
 		<select name="training" id="training" class="form-control">
@@ -71,5 +73,4 @@
 					@endforeach
 				</select>
 			</div> --}}
-		@csrf
 

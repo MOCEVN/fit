@@ -18,7 +18,7 @@
 			{{ $form->id }}
 		</div>
 			<div class="col-4">
-				<a href="forms/show">{{ $form->full_name }}</a>
+				<a href="{{ route('form.show', ['id' => $form->id]) }}">{{ $form->full_name }}</a>
 			</div>
 					<div class="col-2">{{ $form->email }}</div>
 					<div class="col-2">{{ $form->workouts }}</div>
