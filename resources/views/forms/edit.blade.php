@@ -1,6 +1,4 @@
- @extends('layouts.app')
-
-@section('title', 'Edit details for ' . $form->full_name)
+@extends('layouts.app')
 
 @section('content')
 

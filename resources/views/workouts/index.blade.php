@@ -21,7 +21,7 @@
     <div class="row">
       <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+          <img class="card-img-top" src="img/7.png" alt="">
           <div class="card-body">
             <h4 class="card-title">Lose weight</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
@@ -34,7 +34,7 @@
 
       <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+          <img class="card-img-top" src="img/2.png" alt="">
           <div class="card-body">
             <h4 class="card-title">Beginner Female</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
@@ -47,7 +47,7 @@
 
       <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+          <img class="card-img-top" src="img/3.png" alt="">
           <div class="card-body">
             <h4 class="card-title">Beginner Male</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -60,7 +60,7 @@
 
       <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+          <img class="card-img-top" src="img/4.png" alt="">
           <div class="card-body">
             <h4 class="card-title">Weight Female</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -73,7 +73,7 @@
 
       <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+          <img class="card-img-top" src="img/5.png" alt="">
           <div class="card-body">
             <h4 class="card-title">Weight male</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -86,7 +86,7 @@
 
       <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+          <img class="card-img-top" src="img/1.png" alt="">
           <div class="card-body">
             <h4 class="card-title">Condition</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -99,7 +99,7 @@
 
       <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+          <img class="card-img-top" src="img/6.png" alt="">
           <div class="card-body">
             <h4 class="card-title">BBB</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
