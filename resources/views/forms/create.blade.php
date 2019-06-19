@@ -16,7 +16,7 @@
 
 	<div class="row">
 		<div class="col-12">
-			<h1>Fill in the form</h1>
+			<h1>Fill your info</h1>
 		</div>
 	</div>
 

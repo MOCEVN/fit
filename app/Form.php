@@ -22,21 +22,6 @@ class Form extends Model
 
 	}
 
-	// public function scopeActive($query)
-	// {
-	// 	return $query->where('active', 1);
-	// }
-
-	// public function scopeInactive($query)
-	// {
-	// 	return $query->where('active', 0);
-	// }
-
-	// public function training()
-	// {
-	// 	return $this->belongsTo(Form::class);
-	// }
-
 	public function WorkoutsOptions()
 	{
 		return [

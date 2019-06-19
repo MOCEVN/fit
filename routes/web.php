@@ -25,8 +25,6 @@ Route::get('workout', 'WorkoutController@index');
 Route::view('about', 'about');
 Route::view('profile', 'profile');
 
-Route::resource('posts', 'PostController');
-
 // Route::get('form', 'FormController@index');
 // Route::get('form/create', 'FormController@create');
 // Route::post('form', 'FormController@store');

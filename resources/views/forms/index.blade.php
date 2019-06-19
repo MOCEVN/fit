@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="col-12">
 			<h1>FIT Form</h1>
-			<button><a href="form/create">Fill in the form</a></button>
+			<button><a href="form/create">Make your account</a></button>
 		</div>
 	</div>
 
@@ -17,10 +17,10 @@
             <div class="col-2">
                 {{ $form->id }}
             </div>
-            <div class="col-4">
+            <div class="col-2">
                     <a href="{{ route('form.show', ['id' => $form->id]) }}">{{ $form->full_name }}</a>
             </div>
-            <div class="col-4">{{ $form->workouts}}</div>
+            <div class="col-2">{{ $form->workouts }}</div>
             <div class="col-2">{{ $form->email }}</div>
         </div>
     @endforeach

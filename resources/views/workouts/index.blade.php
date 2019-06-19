@@ -23,11 +23,11 @@
         <div class="card h-100">
           <img class="card-img-top" src="img/7.png" alt="">
           <div class="card-body">
-            <h4 class="card-title">Lose weight</h4>
+            <h4 class="card-title">Lose Weight</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Afvallen-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Beginner-vrouw-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Beginner-man-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
       </div>
@@ -62,11 +62,11 @@
         <div class="card h-100">
           <img class="card-img-top" src="img/4.png" alt="">
           <div class="card-body">
-            <h4 class="card-title">Weight Female</h4>
+            <h4 class="card-title">Weight Training Female</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Krachttraining-vrouwen-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
       </div>
@@ -75,11 +75,11 @@
         <div class="card h-100">
           <img class="card-img-top" src="img/5.png" alt="">
           <div class="card-body">
-            <h4 class="card-title">Weight male</h4>
+            <h4 class="card-title">Weight Training Male</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Krachttraining-schema-mannen-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Conditietraining.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-BBB-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
       </div>

@@ -34,43 +34,5 @@
 		</select>
 	</div>
 
-	<div class="form-group d-flex flex-column">
-		<label for="image">Profile Image</label>
-		<input type="file" name="image" class="py-2">
-		<div>{{ $errors->first('image') }}</div>
-	</div>
-
 	@csrf
-
-	{{-- <div class="form-group">
-	<label class="training">How many times a week do you train?</label>
-		<select name="training" id="training" class="form-control">
-		<option>Choose your option</option>
-			<option value="0"{{ $form->training1 == '1 or 2' ? 'selected' : ''}}>1 or 2</option>
-			<option value="1"{{ $form->training2 == '3 or 4' ? 'selected' : ''}}>3 or 4</option>
-			<option value="2"{{ $form->training3 == '5 or more' ? 'selected' : ''}}>5 or more</option>
-		</select>
-	</div> --}}
-
-{{-- <div class="form-group">
-	<label class="training_id">How many times a week do you train?</label>
-		<select name="training" id="training" class="form-control">
-			@foreach ($trainings as $training)
-						<option value="{{ $training->id }}">{{ $training->id == $form->training_id ? 'selected' : '' }}</option>
-					@endforeach
-					<option>Choose your option</option>
-			<option value="0"{{ $form->training1 == '1 or 2' ? 'selected' : ''}}>1 or 2</option>
-			<option value="1"{{ $form->training2 == '3 or 4' ? 'selected' : ''}}>3 or 4</option>
-			<option value="2"{{ $form->training3 == '5 or more' ? 'selected' : ''}}>5 or more</option>
-		</select>
-</div> --}}
-
-			{{-- <div class="form-group">
-				<label class="training_id">Trainings</label>
-				<select name="training_id" id="training_id" class="form-control">
-					@foreach ($trainings as $training)
-						<option value="{{ $training->id }}">{{ $training->id == $form->training_id ? 'selected' : '' }}</option>
-					@endforeach
-				</select>
-			</div> --}}
 
