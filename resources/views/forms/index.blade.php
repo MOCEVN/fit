@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="col-12">
 			<h1>FIT Form</h1>
-			<button><a href="form/create">Make your account</a></button>
+			<button><a href="form/create">Fill in the form</a></button>
 		</div>
 	</div>
 

@@ -44,11 +44,11 @@
     </div>
     </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group d-flex flex-column">
-        <label for="image">Profile Image</label>
+    <div class="col-md-6">
+    <div class="form-group d-flex flex-column">
+        {{-- <label for="image">Profile Image</label>
         <input type="file" name="image" class="py-2">
-        <div>{{ $errors->first('image') }}</div>
+        <div>{{ $errors->first('image') }}</div> --}}
     </div>
 
                         </div>
