@@ -23,7 +23,6 @@ Route::resource('contact', 'ContactController');
 Route::get('workout', 'WorkoutController@index');
 
 Route::view('about', 'about');
-Route::view('profile', 'profile');
 
 // Route::get('form', 'FormController@index');
 // Route::get('form/create', 'FormController@create');

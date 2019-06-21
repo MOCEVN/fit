@@ -49,9 +49,13 @@
                     <!--/row-->
                 </div>
                 <div class="tab-pane" id="messages">
-                    <div class="alert alert-info alert-dismissable">
+                    {{-- <div class="alert alert-info alert-dismissable">
                         <a class="panel-close close" data-dismiss="alert">×</a><strong>.ALERT</strong>. Hier horen eigenlijk de exercises, maar de relatie's leggen is helaas niet meer gelukt :(
-                    </div>
+                    </div> --}}
+                    @foreach($exercises as $exercise)
+                    {{$exercise->name}}
+                    @endforeach
+
                 </div>
                 <div class="tab-pane" id="edit">
 

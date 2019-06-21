@@ -9,9 +9,10 @@ class Workout extends Model
 {
 	protected $guarded = [];
 
-	// public function exercises()
-	// {
-	// 	return $this->hasMany('App\Exercise', 'exercise_workout', 'workouts_id', 'exercise_id');
-	// }
+
+	public function exercises()
+	{
+		return $this->belongsToMany('App\Exercise'); //, 'exercise_workout', 'workouts_id', 'exercise_id');
+	}
 
 }

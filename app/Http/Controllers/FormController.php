@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 // use App\Workout;
 use App\Form;
+use App\Exercise;
 use App\Events\NewFormIsRegisteredEvent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -57,8 +58,10 @@ class FormController extends Controller
 
    public function show(Form $form)
    {
+      $exercises = Exercise::all();
+      return view ('forms.show', compact('form'))->with('exercises', $exercises);
 
-      return view ('forms.show', compact('form'));
+
 
       $form->save();
    }
