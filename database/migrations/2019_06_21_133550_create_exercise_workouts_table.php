@@ -14,12 +14,10 @@ class CreateExerciseWorkoutsTable extends Migration
     public function up()
     {
         Schema::create('exercise_workouts', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->primary(['exercise_id', 'workout_id']);
             $table->unsignedBigInteger('workout_id');
             $table->unsignedBigInteger('exercise_id');
             $table->timestamps();
-
-
         });
     }
 

@@ -12,6 +12,6 @@ class Exercise extends Model
 
     public function workouts()
     {
-    	return $this->belongsToMany('App\Workout'); //, 'exercise_workout', 'workouts_id', 'exercise_id');
+    	return $this->belongsToMany(Workout::class)->withTimestamps();
     }
 }

@@ -12,7 +12,7 @@ class Workout extends Model
 
 	public function exercises()
 	{
-		return $this->belongsToMany('App\Exercise'); //, 'exercise_workout', 'workouts_id', 'exercise_id');
+		return $this->belongsToMany(Exercise::class)->withTimestamps();
 	}
 
 }

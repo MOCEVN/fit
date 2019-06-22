@@ -15,8 +15,5 @@ class WorkoutController extends Controller
    		return view('workouts.index')
    			->with('workouts', $workouts);
 
-		// $workouts = Workout::with('exercises')->first();
-
-		// dd($workouts);
 	}
 }

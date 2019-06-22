@@ -3,9 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class ExerciseWorkout extends Pivot
+class ExerciseWorkout extends Model
 {
     //
 }

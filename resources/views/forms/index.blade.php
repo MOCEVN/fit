@@ -11,7 +11,7 @@
 		</div>
 	</div>
 
-    <h4 class="pt-5"><strong>Click on your name to see your info</strong></h4>
+    <h4 class="pt-5 pb-2"><strong>Click on your name to see your info</strong></h4>
 
 	@foreach($forms as $form)
         <div class="row">

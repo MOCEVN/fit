@@ -17,22 +17,24 @@
                     <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" data-target="#messages" data-toggle="tab" class="nav-link">Info</a>
+                    <a href="" data-target="#messages" data-toggle="tab" class="nav-link">Exercises & Info</a>
                 </li>
                 <li class="nav-item">
                     <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit your account</a>
                 </li>
             </ul>
+
+            <!--PROFILE!-->
             <div class="tab-content py-4">
                 <div class="tab-pane active" id="profile">
-                    <h5 class="mb-3"><strong>{{ $form->full_name }}</strong></h5>
+                    <h4 class="mb-3"><strong>Account Info</strong></h4>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row">
         <div class="col-12">
-            <p><strong>Full name:</strong> {{ $form->full_name }}</p>
-            <p><strong>Email:</strong> {{ $form->email }}</p>
-            <p><strong>Workout:</strong> {{ $form->workouts }}</p>
+            <h5><strong>Full name:</strong> {{ $form->full_name }}</h5>
+            <h5><strong>Email:</strong> {{ $form->email }}</h5>
+            <h5><strong>Workout:</strong> {{ $form->workouts }}</h5>
         </div>
     </div>
     </div>
@@ -46,15 +48,19 @@
 </div>
 
     </div>
-                    <!--/row-->
+                    <!--INFO ROW-->
                 </div>
                 <div class="tab-pane" id="messages">
                     {{-- <div class="alert alert-info alert-dismissable">
                         <a class="panel-close close" data-dismiss="alert">×</a><strong>.ALERT</strong>. Hier horen eigenlijk de exercises, maar de relatie's leggen is helaas niet meer gelukt :(
                     </div> --}}
-                    @foreach($exercises as $exercise)
-                    {{$exercise->name}}
-                    @endforeach
+
+                    <h4><strong>Info</strong></h4><br>
+                    <h4><strong>Exercises:</strong></h4>
+
+                        @foreach($workout->exercise as $exercise)
+                            <h5>{{ $exercise->workout_id }}</h5>
+                        @endforeach<br>
 
                 </div>
                 <div class="tab-pane" id="edit">
@@ -72,10 +78,8 @@
                 @csrf
                 <button class="btn btn-danger" type="submit" value="Delete">Delete form</button>
             </form>
-
         <hr>
         </div>
-
                 </div>
             </div>
         </div>

@@ -11,6 +11,9 @@
 |
 */
 
+use App\Exercise;
+use App\Workout;
+
 Auth::routes();
 
 Route::view('/', 'home')->name('index');
@@ -24,6 +27,16 @@ Route::get('workout', 'WorkoutController@index');
 
 Route::view('about', 'about');
 
+// Route::get('/', function () {
+
+// 	// $workouts = \App\Workout::first();
+
+// 	// $workouts->exercises()->sync([1, 2, 4]);
+
+// 	$exercise = Exercise::find(17);
+// 	$exercise->workouts()->attach([5]);
+
+// });
 // Route::get('form', 'FormController@index');
 // Route::get('form/create', 'FormController@create');
 // Route::post('form', 'FormController@store');
