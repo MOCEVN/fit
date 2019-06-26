@@ -58,10 +58,17 @@
                     <h4><strong>Info</strong></h4><br>
                     <h4><strong>Exercises:</strong></h4>
 
-                        @foreach($workout->exercise as $exercise)
-                            <h5>{{ $exercise->workout_id }}</h5>
-                        @endforeach<br>
+                       {{--  @foreach($workouts as $workout)
+                            <h4><b> {{ $workout->name }} </b></h4>
 
+                        @foreach($workout->exercises as $exercise)
+
+                            {{ $exercise->name }} <br>
+
+                        @endforeach
+
+                        @endforeach
+ --}}
                 </div>
                 <div class="tab-pane" id="edit">
 

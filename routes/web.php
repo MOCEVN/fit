@@ -29,14 +29,20 @@ Route::view('about', 'about');
 
 // Route::get('/', function () {
 
-// 	// $workouts = \App\Workout::first();
+// 	$workouts = \App\Workout::all();
+
+// 	$exercise = \App\Workout::all();
+
+// 	dd($workouts->all());
+
 
 // 	// $workouts->exercises()->sync([1, 2, 4]);
 
-// 	$exercise = Exercise::find(17);
-// 	$exercise->workouts()->attach([5]);
+// 	// $exercise = Exercise::find(17);
+// 	// $exercise->workouts()->attach([5]);
 
 // });
+
 // Route::get('form', 'FormController@index');
 // Route::get('form/create', 'FormController@create');
 // Route::post('form', 'FormController@store');

@@ -16,9 +16,51 @@
         <a class="btn btn-primary btn-lg" href="form">Get started</a>
       </div>
     </div>
-    <!-- /.row -->
 
     <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+   @foreach($workouts as $workout)
+     <h4><b> {{ $workout->name }} </b></h4>
+
+      @foreach($workout->exercises as $exercise)
+
+      {{ $exercise->name }} <br>
+
+      @endforeach
+
+    @endforeach
+  </div>
+</div>
+</div>
+</div>
+
+{{-- TEST --}}
+
+<div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+
+   @foreach($workouts as $workout)
+     <h4><b> {{ $workout->name }} </b></h4>
+
+      @foreach($workout->exercises as $exercise)
+
+      {{ $exercise->name }} <br>
+
+      @endforeach
+
+    @endforeach
+  </div>
+</div>
+</div>
+</div>
+
+    <!-- /.row -->
+
+    {{-- <div class="row">
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <img class="card-img-top" src="img/7.png" alt="">
@@ -30,83 +72,11 @@
             <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Afvallen-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
           </div>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="img/2.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Beginner Female</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Beginner-vrouw-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
-          </div>
         </div>
       </div>
 
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="img/3.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Beginner Male</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Beginner-man-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="img/4.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Weight Training Female</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Krachttraining-vrouwen-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="img/5.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Weight Training Male</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Krachttraining-schema-mannen-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="img/1.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Condition</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-Conditietraining.pdf" class="btn btn-primary" target="_blank">More Info</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="img/6.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">BBB</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.fitforfree.nl/sites/fitforfree.nl/files/Fit-For-Free-Trainingsschema-BBB-Technogym.pdf" class="btn btn-primary" target="_blank">More Info</a>
-          </div>
         </div>
       </div>
 
